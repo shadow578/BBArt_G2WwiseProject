@@ -3,17 +3,7 @@
 	<Events>
 		<WorkUnit Name="BBArt" ID="{DCABA37F-79B3-4DFD-9EAA-05565DA248C1}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="play_specialsfx_hm_death2016" ID="{120F8BB5-93FA-4A26-978E-0098F0034598}">
-					<ChildrenList>
-						<Action Name="" ID="{36B62B1B-3291-4A6C-9E5F-A8F8B91F4A32}" ShortID="178562686">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="specialsfx_hm_death2016" ID="{E785E784-6F2B-481D-B775-646C8A086167}" WorkUnitID="{2372A5C7-B985-4358-95FE-358EE2764228}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
+				<WorkUnit Name="specialsfx_hm_death2016" ID="{E492DA4B-D85D-44BA-9BD4-0C4AD507879A}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

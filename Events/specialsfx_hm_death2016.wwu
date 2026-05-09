@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E492DA4B-D85D-44BA-9BD4-0C4AD507879A}" SchemaVersion="97" RootDocumentID="{DCABA37F-79B3-4DFD-9EAA-05565DA248C1}">
+	<Events>
+		<WorkUnit Name="specialsfx_hm_death2016" ID="{E492DA4B-D85D-44BA-9BD4-0C4AD507879A}" OwnerID="{DCABA37F-79B3-4DFD-9EAA-05565DA248C1}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="play_hawaiian_cocktail" ID="{7DF03FBE-5379-420A-9546-76A5DA9FEBF8}">
+					<ChildrenList>
+						<Action Name="" ID="{C4DE21FF-246F-4FBF-B544-44344C716666}" ShortID="206484560">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="hawaiian_cocktail" ID="{03E6A6E4-06E3-4658-8705-B86257160E73}" WorkUnitID="{2372A5C7-B985-4358-95FE-358EE2764228}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="play_steel_licks" ID="{4F2A3224-6DA2-42BC-B7AD-E2F9F7939AA7}">
+					<ChildrenList>
+						<Action Name="" ID="{494D47C9-BA7C-46D3-9F73-3FD73340DA6E}" ShortID="188711636">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="steel_licks_22" ID="{77BA8BBC-8D99-412E-83EB-2A29813DBB1C}" WorkUnitID="{2372A5C7-B985-4358-95FE-358EE2764228}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

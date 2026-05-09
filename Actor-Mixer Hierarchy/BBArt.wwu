@@ -3,9 +3,23 @@
 	<AudioObjects>
 		<WorkUnit Name="BBArt" ID="{2372A5C7-B985-4358-95FE-358EE2764228}" PersistMode="Standalone">
 			<ChildrenList>
-				<RandomSequenceContainer Name="specialsfx_hm_death2016" ID="{E785E784-6F2B-481D-B775-646C8A086167}" ShortID="737944328">
+				<Sound Name="hawaiian_cocktail" ID="{03E6A6E4-06E3-4658-8705-B86257160E73}" ShortID="29049248">
 					<PropertyList>
-						<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+						<Property Name="IsStreamingEnabled" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-15</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Weight" Type="Real64">
+							<ValueList>
+								<Value>30</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -16,86 +30,57 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="hawaiian_cocktail" ID="{03E6A6E4-06E3-4658-8705-B86257160E73}" ShortID="29049248">
-							<PropertyList>
-								<Property Name="IsStreamingEnabled" Type="bool">
-									<ValueList>
-										<Value>False</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>2</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Weight" Type="Real64">
-									<ValueList>
-										<Value>30</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5C2AE085-1B72-410A-B4B1-A87D3834E8AB}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{24E23A41-B9EB-4210-91D1-95D6A4B75880}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="hawaiian_cocktail" ID="{16471514-CACE-452C-BD00-08251DE1829B}">
-									<Language>SFX</Language>
-									<AudioFile>hawaiian_cocktail.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="382706137"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="hawaiian_cocktail" ID="{16471514-CACE-452C-BD00-08251DE1829B}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="steel_licks_22" ID="{77BA8BBC-8D99-412E-83EB-2A29813DBB1C}" ShortID="965579459">
-							<PropertyList>
-								<Property Name="IsStreamingEnabled" Type="bool">
-									<ValueList>
-										<Value>False</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>8</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Weight" Type="Real64">
-									<ValueList>
-										<Value>70</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5C2AE085-1B72-410A-B4B1-A87D3834E8AB}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{24E23A41-B9EB-4210-91D1-95D6A4B75880}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="steel_licks_22" ID="{E9E3E1C7-2EDC-4F63-8C33-6AC2828E5F78}">
-									<Language>SFX</Language>
-									<AudioFile>steel_licks_22.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="530216026"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="steel_licks_22" ID="{E9E3E1C7-2EDC-4F63-8C33-6AC2828E5F78}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
+						<AudioFileSource Name="hawaiian_cocktail" ID="{16471514-CACE-452C-BD00-08251DE1829B}">
+							<Language>SFX</Language>
+							<AudioFile>hawaiian_cocktail.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="382706137"/>
+							</MediaIDList>
+						</AudioFileSource>
 					</ChildrenList>
-				</RandomSequenceContainer>
+					<ActiveSourceList>
+						<ActiveSource Name="hawaiian_cocktail" ID="{16471514-CACE-452C-BD00-08251DE1829B}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="steel_licks_22" ID="{77BA8BBC-8D99-412E-83EB-2A29813DBB1C}" ShortID="965579459">
+					<PropertyList>
+						<Property Name="IsStreamingEnabled" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-9</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Weight" Type="Real64">
+							<ValueList>
+								<Value>70</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5C2AE085-1B72-410A-B4B1-A87D3834E8AB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{24E23A41-B9EB-4210-91D1-95D6A4B75880}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="steel_licks_22" ID="{E9E3E1C7-2EDC-4F63-8C33-6AC2828E5F78}">
+							<Language>SFX</Language>
+							<AudioFile>steel_licks_22.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="530216026"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="steel_licks_22" ID="{E9E3E1C7-2EDC-4F63-8C33-6AC2828E5F78}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
