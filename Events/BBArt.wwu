@@ -4,6 +4,7 @@
 		<WorkUnit Name="BBArt" ID="{DCABA37F-79B3-4DFD-9EAA-05565DA248C1}" PersistMode="Standalone">
 			<ChildrenList>
 				<WorkUnit Name="specialsfx_hm_death2016" ID="{E492DA4B-D85D-44BA-9BD4-0C4AD507879A}" PersistMode="Reference"/>
+				<WorkUnit Name="hm_exfiltration" ID="{F057B2BB-795B-4999-9C74-679CBB40A83D}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

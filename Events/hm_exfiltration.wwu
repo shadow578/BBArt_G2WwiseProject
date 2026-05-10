@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F057B2BB-795B-4999-9C74-679CBB40A83D}" SchemaVersion="97" RootDocumentID="{DCABA37F-79B3-4DFD-9EAA-05565DA248C1}">
+	<Events>
+		<WorkUnit Name="hm_exfiltration" ID="{F057B2BB-795B-4999-9C74-679CBB40A83D}" OwnerID="{DCABA37F-79B3-4DFD-9EAA-05565DA248C1}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="sv_mtl_closetoexit" ID="{D74E2FE7-4C9C-4798-B163-2963160C1B7E}">
+					<ChildrenList>
+						<Action Name="" ID="{1D587F84-45FD-42CE-B058-6E717C930948}" ShortID="1037438466">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+								<Property Name="Volume" Type="Real64" Value="-8"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sweet_victory_seq" ID="{60166CCD-8660-4D23-8140-C1E6FB6D7A06}" WorkUnitID="{6D475E47-B860-4495-AFF5-CDA7E4D74BDC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="sv_mtl_exf_amb" ID="{0C88F957-AE01-4E82-9652-8B6E13A31B2E}"/>
+				<Event Name="sv_mtl_exf_com" ID="{BCD7E2DB-8ADC-4B21-B00C-12C8C7E2B7D4}"/>
+				<Event Name="sv_mtl_exf_sus" ID="{F0BDF05A-3893-4189-AA0D-CF1A4A50EB36}"/>
+				<Event Name="sv_mtl_goexf" ID="{FA08B923-49D3-4AC2-8992-9CDFF30B6A16}">
+					<ChildrenList>
+						<Action Name="" ID="{30793E01-E02B-4D94-8692-7745ABB3520B}" ShortID="909890605">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sweet_victory_seq" ID="{60166CCD-8660-4D23-8140-C1E6FB6D7A06}" WorkUnitID="{6D475E47-B860-4495-AFF5-CDA7E4D74BDC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="sv_mtl_exitcut" ID="{BD277230-B139-4CDD-993D-BB6083E40756}">
+					<ChildrenList>
+						<Action Name="" ID="{A723527E-6D30-4AC7-8686-307B15AF5AFD}" ShortID="686372503">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sweet_victory_seq" ID="{60166CCD-8660-4D23-8140-C1E6FB6D7A06}" WorkUnitID="{6D475E47-B860-4495-AFF5-CDA7E4D74BDC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{53CE7952-C69B-4167-9A6B-021B3186783D}" ShortID="65436630">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.5"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sweet_victory_exitcut" ID="{D93A10BE-3A60-423D-BF6E-A7F45DEB0A8F}" WorkUnitID="{6D475E47-B860-4495-AFF5-CDA7E4D74BDC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="sv_mtl_exitcut_end" ID="{0FC7C143-2F6C-453C-8194-3734EE7A4224}">
+					<ChildrenList>
+						<Action Name="" ID="{5A2294B7-BCBD-49D7-8679-AA5C81404BBD}" ShortID="491603030">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sweet_victory_exitcut" ID="{D93A10BE-3A60-423D-BF6E-A7F45DEB0A8F}" WorkUnitID="{6D475E47-B860-4495-AFF5-CDA7E4D74BDC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="sv_mtl_notclosetoexit" ID="{C5F48AB0-0B07-4E6A-A890-E7581B58D382}">
+					<ChildrenList>
+						<Action Name="" ID="{399BB325-DC43-462D-83AA-8378E8BB91DD}" ShortID="152620889">
+							<PropertyList>
+								<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+								<Property Name="Volume" Type="Real64" Value="-15"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sweet_victory_seq" ID="{60166CCD-8660-4D23-8140-C1E6FB6D7A06}" WorkUnitID="{6D475E47-B860-4495-AFF5-CDA7E4D74BDC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
